@@ -1,0 +1,18 @@
+{
+  "name": "lmaero.pro",
+  "version": "0.0.0",
+  "description": "Personal website to showcase engineering and development experience",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": "git@github.com:lmaero/lmaero.github.io.git",
+  "author": "Luis Guzman <luis.dev@lmaero.pro>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "parcel": "^2.0.1"
+  }
+}
