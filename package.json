@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "description": "Personal website to showcase engineering and development experience",
   "source": "index.html",
+  "homepage": "https://lmaero.pro",
   "scripts": {
     "start": "rm -rf ./dist && parcel",
-    "build": "rm -rf ./dist && parcel build"
+    "build": "rm -rf ./dist && parcel build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": "git@github.com:lmaero/lmaero.github.io.git",
   "author": "Luis Guzman <luis.dev@lmaero.pro>",
@@ -14,5 +17,8 @@
   "dependencies": {
     "parcel": "^2.0.1",
     "typed.js": "^2.0.12"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
