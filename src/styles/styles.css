@@ -31,22 +31,20 @@ body {
 /* Header */
 header {
   background-color: var(--color-white);
-  border-bottom: 3px solid var(--color-border);
+  border-bottom: 1px dotted var(--color-border);
+  box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  padding-bottom: 0;
 }
 
 /* Navigation Bar */
 .header__nav {
-  align-items: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
 .nav__brand img {
   height: auto;
-  width: 200px;
+  width: 150px;
 }
 
 /* Typed */
@@ -61,9 +59,8 @@ header {
   color: var(--color-primary);
   font-size: 1.5rem;
   font-weight: bold;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.25rem;
   display: inline;
-  margin-bottom: 1rem;
 }
 
 .typed-cursor {
