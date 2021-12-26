@@ -1,0 +1,71 @@
+:root {
+  /* VARIABLES */
+  /* Colors */
+  --color-body: hsl(235, 21%, 21%);
+  --color-border: hsl(240, 6%, 90%);
+  --color-primary: hsl(172, 95%, 30%);
+  --color-secondary: hsl(180, 100%, 25%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/* CSS RESET */
+/* Box Sizing */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Root Font */
+html {
+  font-size: 62.5%;
+  line-height: 1.15;
+}
+
+/* TYPOGRAPHY */
+body {
+  font-size: 2.4rem;
+}
+
+/* HEADER */
+/* Header */
+header {
+  background-color: var(--color-white);
+  border-bottom: 3px solid var(--color-border);
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+/* Navigation Bar */
+.header__nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav__brand img {
+  height: auto;
+  width: 200px;
+}
+
+/* Typed */
+.header__typed {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin: 0;
+}
+
+.typed {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  display: inline;
+  margin-bottom: 1rem;
+}
+
+.typed-cursor {
+  color: var(--color-primary);
+}
