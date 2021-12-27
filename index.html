@@ -8,7 +8,7 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
   <meta name="description"
-        content="Luis Miguel Guzman Perez, aeronautical engineer from Zipaquirá, Colombia. Specialized in Design For Manufacturing (DFM). Web development enthusiast">
+        content="Luis Miguel Guzman Perez, aeronautical engineer from Zipaquirá, Colombia. Specialized in Design For Manufacturing (DFM). Web development enthusiast and hobbyist">
   <meta name="keywords"
         content="aeronautical engineer development Luis Miguel Guzman Perez design for manufacturing">
 
@@ -16,7 +16,7 @@
   <meta property="og:title"
         content="lmaero.pro - Luis Miguel Guzman Perez">
   <meta property="og:description"
-        content="Luis Miguel Guzman Perez, aeronautical engineer from Zipaquirá, Colombia. Specialized in Design For Manufacturing (DFM). Web development enthusiast">
+        content="Luis Miguel Guzman Perez, aeronautical engineer from Zipaquirá, Colombia. Specialized in Design For Manufacturing (DFM). Fullstack development enthusiast and hobbyist">
   <meta property="og:type"
         content="website">
   <meta property="og:image"
@@ -24,7 +24,19 @@
   <meta property="og:url"
         content="https://lmaero.pro/">
 
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+  <link crossorigin="anonymous"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Viga&display=swap"
+        rel="stylesheet">
 
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/bddb75c93c.js"
+          crossorigin="anonymous"></script>
 
   <!-- NORMALIZE CSS -->
   <link rel="stylesheet"
@@ -39,6 +51,7 @@
 
 <body>
 
+  <!-- HEADER -->
   <header class="header">
     <nav class="header__nav">
       <a class="nav__brand"
@@ -48,8 +61,74 @@
       </a>
     </nav>
 
-    <p class="header__typed"><code>.pro(<span class="typed"></span>)</code></p>
+    <p class="header__typed"><code>.pro(<span class="typed"></span>)</code>
+    </p>
   </header>
+
+  <!-- MAIN SECTION - HERO -->
+  <main class="hero">
+    <picture>
+      <source type="image/webp"
+              srcset="
+              ./src/assets/images/luis-guzman-photo@1x.webp 1x,
+              ./src/assets/images/luis-guzman-photo@2x.webp 2x,
+              ./src/assets/images/luis-guzman-photo@3x.webp 3x" />
+      <source type="image/jpeg"
+              srcset="
+              ./src/assets/images/luis-guzman-photo@1x.jpg 1x,
+              ./src/assets/images/luis-guzman-photo@2x.jpg 2x,
+              ./src/assets/images/luis-guzman-photo@3x.jpg 3x" />
+      <img class="hero__image"
+           src="./src/assets/images/luis-guzman-photo@3x.JPG"
+           alt="Luis Miguel Guzman Perez's photo of himself" />
+    </picture>
+
+    <h1 class="hero__title">Luis Guzman</h1>
+
+    <p class="hero__description">
+      Hi! I'm an <strong>aeronautical engineer</strong> from Zipaquirá,
+      Colombia, specialized in <strong>Design For Manufacturing
+        (DFM)</strong>. I consider myself a <strong>fullstack
+        developer</strong>
+      enthusiast and hobbyist.
+    </p>
+
+    <p class="hero__description">
+      Currently working as a <strong>project engineer</strong> at <a
+         href="https://saharaero.com/">SAHAR Group LLC</a>
+    </p>
+
+    <div class="hero__contact">
+      <a class="hero__contact-link"
+         href="https://www.linkedin.com/in/lmaeropro/"
+         aria-label="Link to Luis Guzman's LinkedIn Profile">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a class="hero__contact-link"
+         href="mailto:luis.g@lmaero.pro"
+         aria-label="Mail to Luis Guzman">
+        <i class="fas fa-envelope-square"></i>
+      </a>
+
+      <a class="hero__contact-link"
+         href="https://github.com/lmaero"
+         aria-label="Link to Luis Guzman's GitHub Profile">
+        <i class="fab fa-github-square"></i>
+      </a>
+
+      <a class="hero__contact-link"
+         download="CV-LuisGuzman.pdf"
+         href="./src/assets/documents/CV-LuisGuzman.pdf"
+         aria-label="Download Luis Guzman's resume">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+  </main>
+
+  <!-- TODO: CREATE DESIGN SECTION -->
+
+  <!-- TODO: CREATE DEVELOPMENT SECTION -->
 
   <script type="module"
           src="./src/javascript/main.js"></script>
