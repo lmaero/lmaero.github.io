@@ -94,6 +94,32 @@ body {
   min-width: 320px;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'header header header'
+      'hero dev dpd'; /* DEV=DEVELOPMENT && DPD=DIGITAL PRODUCT DEVELOPMENT */
+  }
+
+  .header {
+    grid-area: header; /* FULL WIDTH AT FIRST ROW OF THE GRID */
+    padding: 2rem;
+  }
+
+  .hero {
+    grid-area: hero;
+  }
+
+  .experience__dev {
+    grid-area: dev;
+  }
+
+  .experience__dpd {
+    grid-area: dpd;
+  }
+}
+
 /* HEADER */
 /* Header */
 header {
@@ -184,4 +210,20 @@ header {
 .hero__contact-link:hover {
   color: var(--color-body);
   transform: scale(2);
+}
+
+/* EXPERIENCE SECTIONS  */
+/* Wrapper */
+.experience {
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+  color: var(--color-white);
+  margin: 1rem;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.experience__title {
+  color: var(--color-white);
+  margin-top: 0;
 }
