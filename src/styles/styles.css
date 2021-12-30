@@ -94,32 +94,6 @@ body {
   min-width: 320px;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      'header header header'
-      'hero dev dpd'; /* DEV=DEVELOPMENT && DPD=DIGITAL PRODUCT DEVELOPMENT */
-  }
-
-  .header {
-    grid-area: header; /* FULL WIDTH AT FIRST ROW OF THE GRID */
-    padding: 2rem;
-  }
-
-  .hero {
-    grid-area: hero;
-  }
-
-  .experience__dev {
-    grid-area: dev;
-  }
-
-  .experience__dpd {
-    grid-area: dpd;
-  }
-}
-
 /* HEADER */
 /* Header */
 header {
@@ -182,6 +156,7 @@ header {
 .hero__title {
   color: var(--color-secondary);
   font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -191,7 +166,7 @@ header {
 }
 
 /* Contact Links */
-.hero__contact {
+.hero__contact-wrapper {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -226,4 +201,77 @@ header {
 .experience__title {
   color: var(--color-white);
   margin-top: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'header header'
+      'hero hero'
+      'dev dpd';
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .hero {
+    display: grid;
+    grid-area: hero;
+    grid-gap: 4rem;
+    grid-template-areas: 'picture description contact';
+    grid-template-columns: 1fr 2.5fr 0.5fr;
+  }
+
+  .hero__picture-wrapper {
+    grid-area: picture;
+    text-align: center;
+  }
+
+  .hero__description-wrapper {
+    grid-area: description;
+  }
+
+  .hero__contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-area: contact;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    grid-template-areas:
+      'header header header'
+      'hero dev dpd'; /* DEV=DEVELOPMENT && DPD=DIGITAL PRODUCT DEVELOPMENT */
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header {
+    grid-area: header; /* FULL WIDTH AT FIRST ROW OF THE GRID */
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .hero {
+    display: flex;
+    grid-area: hero;
+  }
+
+  .hero__contact-wrapper {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .experience__dev {
+    grid-area: dev;
+  }
+
+  .experience__dpd {
+    grid-area: dpd;
+  }
 }

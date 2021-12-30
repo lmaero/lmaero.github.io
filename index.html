@@ -67,38 +67,40 @@
 
   <!-- MAIN SECTION - HERO -->
   <main class="hero">
-    <picture>
-      <source type="image/webp"
-              srcset="
-              ./src/assets/images/luis-guzman-photo@1x.webp 1x,
-              ./src/assets/images/luis-guzman-photo@2x.webp 2x,
-              ./src/assets/images/luis-guzman-photo@3x.webp 3x" />
-      <source type="image/jpeg"
-              srcset="
-              ./src/assets/images/luis-guzman-photo@1x.jpeg 1x,
-              ./src/assets/images/luis-guzman-photo@2x.jpeg 2x,
-              ./src/assets/images/luis-guzman-photo@3x.jpeg 3x" />
-      <img class="hero__image"
-           src="./src/assets/images/luis-guzman-photo@3x.jpeg"
-           alt="Luis Miguel Guzman Perez's photo of himself" />
-    </picture>
+    <div class="hero__picture-wrapper">
+      <picture>
+        <source type="image/webp"
+                srcset="
+                ./src/assets/images/luis-guzman-photo@1x.webp 1x,
+                ./src/assets/images/luis-guzman-photo@2x.webp 2x,
+                ./src/assets/images/luis-guzman-photo@3x.webp 3x" />
+        <source type="image/jpeg"
+                srcset="
+                ./src/assets/images/luis-guzman-photo@1x.jpeg 1x,
+                ./src/assets/images/luis-guzman-photo@2x.jpeg 2x,
+                ./src/assets/images/luis-guzman-photo@3x.jpeg 3x" />
+        <img class="hero__image"
+             src="./src/assets/images/luis-guzman-photo@3x.jpeg"
+             alt="Luis Miguel Guzman Perez's photo of himself" />
+      </picture>
+      <h1 class="hero__title">Luis Guzman</h1>
+    </div>
 
-    <h1 class="hero__title">Luis Guzman</h1>
+    <div class="hero__description-wrapper">
+      <p class="hero__description">
+        Hi! I'm an <strong>aeronautical engineer</strong> from Zipaquirá,
+        Colombia, specialized in <strong>Design For Manufacturing
+          (DFM)</strong>. I consider myself a <strong>fullstack
+          developer</strong>
+        enthusiast and hobbyist.
+      </p>
+      <p class="hero__description">
+        Currently working as a <strong>project engineer</strong> at <a
+           href="https://saharaero.com/">SAHAR Group LLC</a>
+      </p>
+    </div>
 
-    <p class="hero__description">
-      Hi! I'm an <strong>aeronautical engineer</strong> from Zipaquirá,
-      Colombia, specialized in <strong>Design For Manufacturing
-        (DFM)</strong>. I consider myself a <strong>fullstack
-        developer</strong>
-      enthusiast and hobbyist.
-    </p>
-
-    <p class="hero__description">
-      Currently working as a <strong>project engineer</strong> at <a
-         href="https://saharaero.com/">SAHAR Group LLC</a>
-    </p>
-
-    <div class="hero__contact">
+    <div class="hero__contact-wrapper">
       <a class="hero__contact-link"
          href="https://www.linkedin.com/in/lmaeropro/"
          aria-label="Link to Luis Guzman's LinkedIn Profile">
