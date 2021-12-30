@@ -171,6 +171,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  max-width: 25rem;
   min-width: 6rem;
   width: 80%;
 }
@@ -180,6 +181,7 @@ header {
   font-size: 3rem;
   transform: scale(1.5);
   transition: all 0.3s ease-in-out;
+  line-height: 1;
 }
 
 .hero__contact-link:hover {
@@ -248,7 +250,7 @@ header {
     grid-template-areas:
       'header header header'
       'hero dev dpd'; /* DEV=DEVELOPMENT && DPD=DIGITAL PRODUCT DEVELOPMENT */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 0.75fr repeat(2, 1fr);
   }
 
   .header {
@@ -260,11 +262,25 @@ header {
   .hero {
     display: flex;
     grid-area: hero;
+    height: calc(85vh);
+  }
+
+  .hero__title {
+    margin-bottom: 0;
+  }
+
+  .hero__description {
+    margin-top: 0;
   }
 
   .hero__contact-wrapper {
     flex-direction: row;
+    margin-top: 0;
     width: 90%;
+  }
+
+  .experience {
+    height: calc(85vh);
   }
 
   .experience__dev {
